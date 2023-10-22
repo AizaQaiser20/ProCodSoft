@@ -1,0 +1,95 @@
+*,*:before, *:after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    height: 100vh;
+   /* background: radial-gradient(circle, #7a588d,rgb(112, 11, 112)); 
+   background-image: url('https://www.theladders.com/wp-content/uploads/to-do-list-190702-800x450.jpg'); 
+   */
+   background-image: linear-gradient(to right,#bf6ddb, #182172);
+   background-size: cover;
+   background-position: center;
+}
+.container {
+    width: 50%;
+    min-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #58007a;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+#newtask{
+    position: relative;
+}
+#newtask input{
+    width: 75%;
+    height: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 15px;
+    outline:none;
+    border: none; 
+    color: black;
+    font-weight: 1000%;
+    border-radius: 7px;
+   
+}
+
+#newtask button{
+    position: relative;
+    float: center;
+    width: 20%;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #c3b3cc;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+#tasks {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.task{ 
+    background-color: #c3b3cc;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+}
+.task span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.task button {
+    background-color: #c3b3cc;
+    color: #7a588d;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.completed {
+    text-decoration: line-through;
+}
