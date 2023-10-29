@@ -1,0 +1,79 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.container{
+    background-color: rgb(2, 2, 37);
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+#scrnarea{
+    width: 100%;
+    margin: 3vh 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, minmax(40px, auto));
+    word-wrap: break-word;
+    border-bottom: 1px rgba(175, 173, 173, 0.156) solid;
+}
+#scrnarea crntinput{
+    color: aliceblue;
+    text-align: right;
+    height: 8vh;
+    font-size: xx-large;
+    line-height: 2;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+#scrnarea ansscrn{
+text-align:right;
+color:grey;
+line-height:3;
+font-size: larger;
+}
+.key-btns{
+    display: grid;
+    grid: repeat(5, 90px)/repeat(4,120px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.key-btns button{
+    outline: none;
+    border: none;
+    border-radius: 70px;
+    background-color: aqua;
+    font-size: x-large;
+    font-weight: bold;
+}
+.key-btns .fun-btn{
+    color: brown;
+    background: white;
+    font-weight: bold;
+}
+button:hover{
+    opacity: 0.7;
+
+}
+#clear{
+    background:black ;
+    color: moccasin;
+}
+@media only screen and(max-width:600px){
+    body{
+        background-color: #131313;
+        align-items: flex-start;
+    }
+}
